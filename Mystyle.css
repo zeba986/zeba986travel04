@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+@font-face {
+    font-family:  "Dongle-light";
+    src: url("Dongle/Dongle-light.ttf");
+}
+@font-face {
+    font-family: "Dongle-regular";
+    src: url("Dongle/Dongle-regular.ttf");
+}
+@font-face {
+    font-family: "Dongle-bold";
+    src: url("Dongle/Dongle-bold.ttf");
+}
+header {
+    display: flex;  
+    box-sizing:  400px border-box;
+    background-color: #fff;
+    box-shadow: 0 0 50px rgb(0, 0, 0, 0.1);
+    align-items: center;
+    position: fixed;   /*all contain will be hide behind the navigation bar */
+    z-index: 1;
+    max-width: 100%;
+    height: 50px;
+}
+.logo img{
+     max-width: 40%;
+}
+.nav-menu ul {
+ display: flex;
+}
+.nav-menu li{
+    list-style: none;
+    margin-right: 170px;
+}
+.nav-menu li:last-child{
+    margin-right: 0;
+}
+.nav-menu a{
+    text-decoration: none;
+    font-family: "Dongle-bold";
+    font-size: 1.6rem;
+    color: #333;
+    transition: all ease 0.3s; /* for fast colour effect*/
+
+
+}
+.nav-menu a:hover{
+    color: rgb(239, 126, 6);
+}
+.hero{
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+.hero-image img{
+    position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     z-index: -1;
+     opacity: 0.7; /*the image will get blurred*/
+}
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /* all in center*/
+    text-align: center;
+    color: #fff;
+}
+.hero-content h1{
+    font-family: "Dongle-bold";
+    font-size: 4rem;
+}
+.hero-content p{
+    font-family: "Dongle-regular";
+    font-size: 1.8rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.hero-button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #c25229;
+    padding: 12px 30px;
+    border-radius: 50px; /* button shape will be round*/
+    font-family: "Dongle-light";
+    font-size: 1.6rem;
+    transition: all ease 0.3s;
+}
+.hero-button:hover{
+    color: #333;
+}
+.destination{
+    font-size: 2.4rem;
+    font-family: "Dongle-bold";
+    margin: 80px 40px;
+    text-align: center;
+}
+.destination h2{
+    margin-bottom: 40px;
+}
+.destination-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* three columns and their distance will equal*/
+    grid-gap: 40px;   /*gap between picture*/
+}
+.destination-item img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px; /* border of image will be round*/
+}
+.destination-item{
+    text-align: left;
+}   
+.destination-item h3{
+    font-size: 2rem;
+}
+.destination-item p{
+    font-size: 1.3rem;
+    line-height: 1;
+    font-family: "Dongle-regular";
+}
+.destinations{    /*here the hotel featured is started*/
+    font-size: 2.4rem;
+    font-family: "Dongle-bold";
+    margin: 80px 40px;
+    text-align: center;
+}
+.destinations h2{
+    margin-bottom: 40px;
+}
+.destinations-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* three columns and their distance will equal*/
+    grid-gap: 40px;   /*gap between picture*/
+}
+.destination-place{
+    font-size: 1.3rem;
+    line-height: 1;
+    font-family: "Dongle-regular";
+}
+.destination-place img{
+     width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+.destination-place{
+    text-align: left;
+}
+.destination-place h3{
+  font-size: 2rem;
+} /*the about us info will start from the next line*/
+.section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+}
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+} 
+.content-section{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.image-section{
+    float: right;
+    width: 100%;
+    height: auto;
+}
+.image-section img{
+    float: left;
+     width: 220%;
+     height: 800px;
+     margin-left: auto;
+}
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.content-section .Content h3{
+    margin-top: 20px;
+    color: #5d5d5d;
+}
+.content-section .Content{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.title{
+    margin-bottom: 40px;
+}
+.content-section .Content .button {
+    margin-top: 30px;
+}
+.content-section .Content .button a{
+       background-color: #3d3d3d;
+       padding: 12px 40px;
+       text-decoration: none;
+       color: #fff;
+       font-size: 25px;
+       letter-spacing: 1.5px;     
+}
+.content-section .Content .button a:hover{
+    background-color: #a52a2a;
+    color: #fff;   
+}
+.content-section .Social{
+    margin-top: 40px;
+}
+.content-section .Social i{
+    color: #a52a2a;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+.content-section .Social i:hover{
+    color: #3d3d3d;   
+}
+@media screen and (max-width:786px){
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+}
+.content-section{
+    float: left;
+    width: 100%;
+    display: block;
+    margin:auto;   
+}
+.image-section{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.content-section .title{
+    text-align: center;
+    font-size: 19px;
+}
+.content-section .Content .button{
+   text-align: center;    
+}
+.content-section .Content .button a{
+    padding: 9px 30px;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition-duration: 1s; /*transition effect*/
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+  width: 200px; /*transition effect*/
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+* {box-sizing: border-box}
+
+/* style the container */
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+  font-size: medium; /* change it from  large to medium */
+}
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Two-column layout */
+.col {
+  float: left;
+  width: 100%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(20%);
+  border: 2px solid #ddd;
+  height: 100px;
+}
+
+/* text inside the vertical line */
+.inner {
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, 50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 20%;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 2px 2px;
+  position: absolute;
+  width: 22%;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 20%;
+    margin-top: 0;
+  }
+  /* hide the vertical line */
+  .vl {
+    display: none;
+  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+.footer {
+   position:relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 70px;
+   background-color: rgb(253, 156, 77);
+   color: white;
+   text-align: center;
+   font-size: large;
+}
+@media screen and(max-width: 768px) { 
+}
+
+
+
+
+
+
